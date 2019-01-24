@@ -1,0 +1,30 @@
+> # setwd("Y:\\EMTS\\41.Sections\\MBOO\\60.Work_Groups\\IT_GIS\\JensWork\\Jodi\\OceanOperations\\")  # this would be based on user input
+> # setwd("E:\\JodiStuff\\OceanOperatiosn\\")
+> setwd("C:\\wq\\R Files\\")
+> rm(list = ls())
+> options(stringsAsFactors = F)
+> # Read in Files
+> ctd <- read.csv("C:\\wq\\Month\\2013 WQ\\May 2013\\15MayMo\\May2013_PLOO_IGODS\\May2013_PLOO_WQ.CSV", skip = 36) # This would be one day's worth of data that was created during field sampling
+> ctd.hist <- read.csv("Historical_CTD_Data.csv") # These are the data that will get passed to the quantiles function to generate the denotations on the plots
+> # Run raw.plots on the one day's worth of data
+> source("OceanConditionsQAQCFunctions.R")
+> # Run CTD QA/QC Plots
+> run.raw.plots(ctd, ctd.hist)  # This would result in plots that would appear on the screen (and user could chose a directory they could be saved to).
+[1] "Quantiles for each variable are:"
+     variable   low.10  high.90
+1        temp 10.45175 16.94000
+2    salinity 33.33100 33.79620
+3         dox  3.83664  8.76208
+4          ph  7.78800  8.24400
+5   pct_light 72.90478 90.48000
+6        cdom  1.88000  4.56000
+7     density 24.34210 25.89500
+8 fluorometry  0.63384 11.05000
+null device 
+          1 
+Warning message:
+package ‘reshape2’ was built under R version 2.15.3 
+> # Run dissolved oxygen and pH scatter plots
+> scat.do.ph(ctd)
+null device 
+          1 

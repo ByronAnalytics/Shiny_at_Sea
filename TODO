@@ -1,0 +1,25 @@
+                         BUGS THAT NEED RESOLVING
+-------------------------------------------------------------------------------
+1) Metadata needs to be reactive for when data files are changed.
+1) App is stable, but slow... focus shift to optimization
+
+                  FUNCTIONALITY REQUIRED TO REPLACE IGODS
+-------------------------------------------------------------------------------
+1) Comment log?
+
+               FEATURES AND OPTIONS THAT HAVE BEEN REQUESTED
+-------------------------------------------------------------------------------
+new Feature: Modal data load window to select & rename columns in .cnv file??
+
+1) Graph Descent Rate
+2) Minimize mouse requirements
+  * 's' for entering save dialog, 'tab' cycles through sensor tabs.
+  a) link keystroke to button events?? oE(button | buttonKeyValue, {})
+  
+4) link Flouremetry and volt columns - if(-Flourometr[i]) then volt <- volt[-i]
+
+
+                       ISSUES TO CLARIFY WITH OCEAN OPS
+-------------------------------------------------------------------------------
+1) If value is removed in one metric, should it be deleted from others??
+2) Did we want a comment box? 

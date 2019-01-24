@@ -1,0 +1,19 @@
+oceName,parameter,minimum,maximum
+temperature,Temperature,10,25
+,Conductivity,2,5
+salinity,Salinity,33,34
+,Density,24,26
+ph,pH,7.5,8.5
+dox,Oxygen (mg/L),2,10
+,SBE DO Sat (mg/L),7,10
+,SBE DO Sat (%),30,130
+xms,% T,35,95
+,SBE Beam C,0,5
+fluorometry,Chl-a (ug/L) WET,0,25
+,Voltage (Chl-a) WET,0,5
+CDOM,CDOM (ug/L) WET,-1.5,6
+,Voltage (CDOM) WET,0,5
+,CDOM(ppb QS) Turner,0,3
+,Voltage (CDOM) Turner,0,5
+,Optical Brighteners (ppb QS)Turner Cyclops,0,6
+,Voltage (Optical Brighteners)Turner Cyclops,0,5

@@ -1,0 +1,83 @@
+> #setwd("Y:\\EMTS\\41.Sections\\MBOO\\60.Work_Groups\\IT_GIS\\JensWork\\Jodi\\OceanOperations\\")  # this would be based on user input
+> #setwd("E:\\JodiStuff\\OceanOperatiosn\\")
+> 
+> rm(list = ls())
+> options(stringsAsFactors = F)
+> 
+> # Read in Files
+> #ctd.march <- read.csv("CTD_DataMarch2011.csv") # This would be one day's worth of data that was created during field sampling
+> ctd.30april <- read.csv("C:\\wq\\Month\\2013 WQ\\April 2013\\30Aprmo\\30Aprmo_igods\\30April2013_Kelp_WQ.CSV")
+> ctd.hist <- read.csv("Historical_CTD_Data.csv") # These are the data that will get passed to the quantiles function to generate the denotations on the plots
+> 
+> # Run raw.plots on the one day's worth of data
+> source("OceanConditionsQAQCFunctions.R")
+> 
+> # Run CTD QA/QC Plots
+> run.raw.plots(ctd.30april, ctd.hist)  # This would result in plots that would appear on the screen (and user could chose a directory they could be saved to).
+Error in loadNamespace(i, c(lib.loc, .libPaths())) : 
+  there is no package called ‘plyr’
+In addition: Warning message:
+package ‘reshape2’ was built under R version 3.0.0 
+Error: package/namespace load failed for ‘reshape2’
+> 
+> # Run dissolved oxygen and pH scatter plots
+> scat.do.ph(ctd.30april)
+Error in split.default(x = seq_len(nrow(x)), f = f, drop = drop, ...) : 
+  Group length is 0 but data length > 0
+
+
+
+===========================================================================================================================================================
+
+#setwd("Y:\\EMTS\\41.Sections\\MBOO\\60.Work_Groups\\IT_GIS\\JensWork\\Jodi\\OceanOperations\\")  # this would be based on user input
+> #setwd("E:\\JodiStuff\\OceanOperatiosn\\")
+> setwd("C:\\wq\\R Programs and Files\\")
+> 
+> rm(list = ls())
+> options(stringsAsFactors = F)
+> 
+> # Read in Files
+> #ctd.march <- read.csv("CTD_DataMarch2011.csv") # This would be one day's worth of data that was created during field sampling
+> ctd.30april <- read.csv("C:\\wq\\Month\\2013 WQ\\April 2013\\30Aprmo\\30Aprmo_igods\\30April2013_Kelp_WQ.CSV")
+> ctd.hist <- read.csv("Historical_CTD_Data.csv") # These are the data that will get passed to the quantiles function to generate the denotations on the plots
+> 
+> # Run raw.plots on the one day's worth of data
+> source("OceanConditionsQAQCFunctions.R")
+> 
+> # Run CTD QA/QC Plots
+> run.raw.plots(ctd.30april, ctd.hist)  # This would result in plots that would appear on the screen (and user could chose a directory they could be saved to).
+Error in loadNamespace(i, c(lib.loc, .libPaths()), versionCheck = vI[[i]]) : 
+  there is no package called ‘stringr’
+Error: package or namespace load failed for ‘reshape2’
+> 
+> # Run dissolved oxygen and pH scatter plots
+> scat.do.ph(ctd.30april)
+Error in split.default(x = seq_len(nrow(x)), f = f, drop = drop, ...) : 
+  group length is 0 but data length > 0
+
+
+===============================================================================================================================================================
+
+> #setwd("Y:\\EMTS\\41.Sections\\MBOO\\60.Work_Groups\\IT_GIS\\JensWork\\Jodi\\OceanOperations\\")  # this would be based on user input
+> #setwd("E:\\JodiStuff\\OceanOperatiosn\\")
+> setwd("C:\\wq\\R Programs and Files\\")
+> 
+> rm(list = ls())
+> options(stringsAsFactors = F)
+> 
+> # Read in Files
+> #ctd.march <- read.csv("CTD_DataMarch2011.csv") # This would be one day's worth of data that was created during field sampling
+> ctd.30april2013 <- read.csv("C:\\wq\\Month\\2013 WQ\\April 2013\\30Aprmo\\30Aprmo_igods\\30April2013_Kelp_WQ.CSV")
+> ctd.hist <- read.csv("Historical_CTD_Data.csv") # These are the data that will get passed to the quantiles function to generate the denotations on the plots
+> 
+> # Run raw.plots on the one day's worth of data
+> source("OceanConditionsQAQCFunctions.R")
+> 
+> # Run CTD QA/QC Plots
+> run.raw.plots(ctd.30april2013, ctd.hist)  # This would result in plots that would appear on the screen (and user could chose a directory they could be saved to).
+Error: id variables not found in data: station, sample_date, depth_meter
+> 
+> # Run dissolved oxygen and pH scatter plots
+> scat.do.ph(ctd.30april2013)
+Error in split.default(x = seq_len(nrow(x)), f = f, drop = drop, ...) : 
+  group length is 0 but data length > 0
