@@ -4,3 +4,4 @@
 *.Rproj
 Thumbs.db
 packrat/lib*/
+packrat/src/
